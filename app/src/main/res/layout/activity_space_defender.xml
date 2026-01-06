@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <com.simats.wellnesshome.ui.SpaceDefenderView
+        android:id="@+id/spaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- UI Overlay -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@android:color/white"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Score: 0"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"/>
+        
+        <TextView
+            android:id="@+id/tvLives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvScore"
+            android:layout_alignParentEnd="true"
+            android:text="Lives: 3"
+            android:textColor="#EF5350"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- Start/Game Over Overlay -->
+        <TextView
+            android:id="@+id/tvGameMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="SPACE DEFENDER\n\nTap to Start"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

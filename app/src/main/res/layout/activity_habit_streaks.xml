@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3F8"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="#333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habit Streaks"
+            android:textColor="#212121"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep up your consistency!"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Mood Streak Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMoodStreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvMoodTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Mood Trend"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/ivFireMood"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@id/tvStreakMood"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_emoji_smile"
+                    app:tint="#FF9800"/> 
+                <!-- Reusing generic icon for fire concept if specific one not avail, or distinct color -->
+
+                <TextView
+                    android:id="@+id/tvStreakMood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="7"
+                    android:textColor="#FF9800"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMoodTitle"
+                    android:layout_marginTop="8dp"
+                    android:text="↗ Best streak: 12 days"
+                    android:textColor="#757575"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Daily Activity Streak Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardActivityStreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvActivityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Analytics"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@id/tvStreakActivity"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_emoji_smile"
+                    app:tint="#FF5722"/>
+
+                <TextView
+                    android:id="@+id/tvStreakActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="5"
+                    android:textColor="#FF5722"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvActivityTitle"
+                    android:layout_marginTop="8dp"
+                    android:text="↗ Best streak: 8 days"
+                    android:textColor="#757575"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Sleep Streak Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSleepStreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvSleepTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sleep Tracking"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@id/tvStreakSleep"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_emoji_smile"
+                    app:tint="#FF9800"/>
+
+                <TextView
+                    android:id="@+id/tvStreakSleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="10"
+                    android:textColor="#FF9800"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSleepTitle"
+                    android:layout_marginTop="8dp"
+                    android:text="↗ Best streak: 15 days"
+                    android:textColor="#757575"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Stress Tracking Streak Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStressStreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvStressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stress Tracking"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@id/tvStreakStress"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_emoji_smile"
+                    app:tint="#66BB6A"/> 
+                    <!-- Using Green/Brain icon color -->
+
+                <TextView
+                    android:id="@+id/tvStreakStress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="4"
+                    android:textColor="#66BB6A"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvStressTitle"
+                    android:layout_marginTop="8dp"
+                    android:text="↗ Best streak: 6 days"
+                    android:textColor="#757575"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Heatmap Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activity Heatmap"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Grid Container populated programmatically -->
+                <GridLayout
+                    android:id="@+id/gridLayoutHeatmap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="7"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:useDefaultMargins="true"/>
+                
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Motivation Banner -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="#FFD180"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉 You're doing amazing! Keep building those healthy habits!"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

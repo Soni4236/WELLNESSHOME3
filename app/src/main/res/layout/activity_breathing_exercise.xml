@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_onboarding_gradient"> 
+    <!-- Reusing existing gradient or use specific color #E1BEE7 if needed, sticking to app theme gradient -->
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="4dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Central Circle Container -->
+    <ImageView
+        android:id="@+id/ivBreathingCircle"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/circle_shape"
+        app:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- Text inside circle -->
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold"
+        android:textColor="#CE93D8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvTimer"
+        app:layout_constraintEnd_toEndOf="@id/ivBreathingCircle"
+        app:layout_constraintStart_toStartOf="@id/ivBreathingCircle"
+        app:layout_constraintTop_toTopOf="@id/ivBreathingCircle"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textColor="#CE93D8"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ivBreathingCircle"
+        app:layout_constraintEnd_toEndOf="@id/ivBreathingCircle"
+        app:layout_constraintStart_toStartOf="@id/ivBreathingCircle"
+        app:layout_constraintTop_toBottomOf="@id/tvInstruction" />
+
+    <!-- Cycle Counter -->
+    <TextView
+        android:id="@+id/tvCycleCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Cycle 0 of 5"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBreathingCircle" />
+
+    <!-- Pause Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPause"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_pause_button"
+        android:text="Pause"
+        android:textAllCaps="false"
+        android:textColor="#CE93D8"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCycleCount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

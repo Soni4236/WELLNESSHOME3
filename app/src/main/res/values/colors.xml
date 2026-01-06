@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="splash_bg_start">#CFA3D8</color> <!-- Light Lavender -->
+    <color name="splash_bg_end">#F3E5F5</color> <!-- Light Pinkish/White -->
+    <color name="splash_button_bg">#B39DDB</color> <!-- Button Color -->
+    
+    <color name="onboarding_bg">#FFF5F7</color>
+    <color name="icon_container_bg">#9ED6DF</color>
+    <color name="icon_container_pink_bg">#F8BBD0</color>
+    <color name="icon_container_green_bg">#C8E6C9</color>
+    <color name="icon_container_yellow_bg">#FFF59D</color>
+    <color name="text_primary">#2D2D2D</color>
+    
+    <!-- Deeper Gradient Colors -->
+    <color name="gradient_start">#CE93D8</color> <!-- Deeper Purple -->
+    <color name="gradient_center">#F8BBD0</color> <!-- Deeper Pink -->
+    <color name="gradient_end">#81D4FA</color>   <!-- Deeper Blue -->
+    <color name="text_secondary">#757575</color>
+    <color name="indicator_active">#B39DDB</color>
+    <color name="indicator_inactive">#E0E0E0</color>
+</resources>

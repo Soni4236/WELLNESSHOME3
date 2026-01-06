@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ChartBarStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    <style name="ChartBarFill">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:background">@drawable/rounded_bar</item>
+        <item name="android:backgroundTint">#CE93D8</item> <!-- Purple 200 -->
+    </style>
+
+    <style name="ChartBarLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">#757575</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>
