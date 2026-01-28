@@ -12,6 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.WELLNESSHOME">
         <activity
             android:name=".MainActivity"
@@ -80,6 +81,51 @@
             android:exported="false" />
         <activity
             android:name=".GamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RetroBricksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpaceDefenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeteorDodgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DinoRunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyActivitiesWelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameStatisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HabitStreaksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyMoodTrendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MonthlyAnalyticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SleepMoodLinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StressMoodLinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RewardsStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RewardDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BadgeUnlockedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BadgesActivity"
             android:exported="false" />
         <activity
             android:name=".ForgotPasswordActivity"
